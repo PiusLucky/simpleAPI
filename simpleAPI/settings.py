@@ -10,9 +10,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # set to "True" in development
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+# make empty in development
+ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
