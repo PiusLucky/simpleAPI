@@ -4,5 +4,5 @@ from .views import ListUUIDS
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'generate-uuids/', ListUUIDS.as_view(), name="generate-uuids"),
+    path(r'/', ListUUIDS.as_view(), name="generate-uuids"),
 ]
